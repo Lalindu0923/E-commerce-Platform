@@ -8,7 +8,7 @@ img{
     padding-left: 10px;
 }
 .Nav{
-    background-color: rgba(113, 165, 211, 0.4);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0.01px;
     position: sticky;
     top: 0;
@@ -22,15 +22,22 @@ img{
     align-items: center;
     justify-content: space-between;
     
+    
 }
 .left-cont a{
     justify-content: center;
+}
+.left-cont, .right-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .left-cont a {
   margin: auto 15px;
   text-decoration: none;
-  color: #333;
+  color: #1bb2c6;
   font-weight: bold;
   padding: 8px 10px;
   border-radius: 10px;
@@ -39,6 +46,7 @@ img{
   font-size: 18px;
 }
 .right-cont a{
+    background-color: #ffffff;
     border: 1px solid rgb(230, 12, 12);
     margin: auto 10px;
     text-decoration: none;
@@ -47,6 +55,8 @@ img{
     padding: 8px 10px;
     border-radius: 10px;
     transition: all 0.4s ease;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 .left-cont a:hover{
@@ -69,9 +79,9 @@ img{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: hwb(0 100% 0% / 0.274);
+    background-color: hwb(0 100% 40% / 0.274);
     padding: 3px 5px;
-    margin: 0;
+    margin:4px 10px 4px 10px;
     border-radius: 4px;
 }
 

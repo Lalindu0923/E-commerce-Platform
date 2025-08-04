@@ -1,8 +1,15 @@
+import BookProductDisplay from '../Product/bookProductcard'
+
+
 const Books = () => {
     return(
-        <div>
+        <><div>
             <h1>This is Books </h1>
         </div>
+        <div>
+            <BookProductDisplay/>
+        </div>
+            </>
     )
 };
 

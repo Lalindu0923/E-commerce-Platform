@@ -1,74 +1,74 @@
-const bookProducts = [
+const vehicleProducts = [
   {
     id: 1,
-    name: "The Alchemist",
-    description: "A journey of self-discovery by Paulo Coelho.",
-    price: 9.99,
-    image: "https://picsum.photos/id/250/200/150"
+    name: "Car Phone Mount",
+    description: "Securely holds your phone while driving.",
+    price: 12.99,
+    image: "https://picsum.photos/id/301/200/150"
   },
   {
     id: 2,
-    name: "Atomic Habits",
-    description: "Tiny changes for remarkable results.",
-    price: 14.99,
-    image: "https://picsum.photos/id/251/200/150"
+    name: "Car Vacuum Cleaner",
+    description: "Compact and powerful cleaner for your car.",
+    price: 24.5,
+    image: "https://picsum.photos/id/302/200/150"
   },
   {
     id: 3,
-    name: "1984",
-    description: "Dystopian novel by George Orwell.",
-    price: 11.5,
-    image: "https://picsum.photos/id/252/200/150"
+    name: "Car Dash Cam",
+    description: "Records every journey for safety and fun.",
+    price: 45.0,
+    image: "https://picsum.photos/id/304/200/150"
   },
   {
     id: 4,
-    name: "Rich Dad Poor Dad",
-    description: "Personal finance basics by Robert Kiyosaki.",
-    price: 10.75,
-    image: "https://picsum.photos/id/253/200/150"
+    name: "Tire Inflator",
+    description: "Portable air compressor for car tires.",
+    price: 38.25,
+    image: "https://picsum.photos/id/304/200/150"
   },
   {
     id: 5,
-    name: "The Psychology of Money",
-    description: "Timeless lessons on wealth and greed.",
-    price: 13.0,
-    image: "https://picsum.photos/id/254/200/150"
+    name: "LED Headlights",
+    description: "Brighter and energy-efficient car lighting.",
+    price: 29.99,
+    image: "https://picsum.photos/id/305/200/150"
   },
   {
     id: 6,
-    name: "Clean Code",
-    description: "Best practices for writing maintainable code.",
-    price: 28.99,
-    image: "https://picsum.photos/id/255/200/150"
+    name: "Seat Organizer",
+    description: "Keep your backseat neat and organized.",
+    price: 10.75,
+    image: "https://picsum.photos/id/306/200/150"
   },
   {
     id: 7,
-    name: "Sapiens",
-    description: "A brief history of humankind.",
-    price: 17.49,
-    image: "https://picsum.photos/id/256/200/150"
+    name: "Blind Spot Mirror",
+    description: "Improve your rear visibility easily.",
+    price: 6.99,
+    image: "https://picsum.photos/id/307/200/150"
   },
   {
     id: 8,
-    name: "Harry Potter 1",
-    description: "The beginning of the wizarding world.",
-    price: 12.99,
-    image: "https://picsum.photos/id/257/200/150"
+    name: "Car Cover",
+    description: "Protects your car from dust and sun.",
+    price: 21.49,
+    image: "https://picsum.photos/id/308/200/150"
   },
   {
     id: 9,
-    name: "Think and Grow Rich",
-    description: "Mindset and money principles.",
-    price: 9.5,
-    image: "https://picsum.photos/id/258/200/150"
+    name: "Bluetooth FM Transmitter",
+    description: "Play music and take calls hands-free.",
+    price: 17.89,
+    image: "https://picsum.photos/id/309/200/150"
   },
   {
     id: 10,
-    name: "The Pragmatic Programmer",
-    description: "Software development tips from pros.",
-    price: 32.0,
-    image: "https://picsum.photos/id/259/200/150"
+    name: "Steering Wheel Lock",
+    description: "Anti-theft device for vehicle safety.",
+    price: 15.99,
+    image: "https://picsum.photos/id/310/200/150"
   }
 ];
 
-export default bookProducts;
+export default vehicleProducts;
