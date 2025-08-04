@@ -1,0 +1,81 @@
+.Main-Out{
+    background-color: aquamarine;
+    margin: 05px;
+}
+
+img{
+    height: 38px;
+    padding-left: 10px;
+}
+.Nav{
+    background-color: rgba(113, 165, 211, 0.4);
+    padding: 0.01px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+      
+}
+.NavBar {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.left-cont a{
+    justify-content: center;
+}
+
+.left-cont a {
+  margin: auto 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  font-weight: bolt;
+  font-size: 18px;
+}
+.right-cont a{
+    border: 1px solid rgb(230, 12, 12);
+    margin: auto 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.left-cont a:hover{
+  color: #007BFF;
+  background-color: #989e9d94;
+}
+
+.right-cont a:hover {
+    color: red;
+    background-color: #857e7e62;
+
+}
+
+.left-cont a.active {
+  background-color: #000; /* black background */
+  color: white;           /* white text for visibility */
+}
+
+.logoh{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hwb(0 100% 0% / 0.274);
+    padding: 3px 5px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.logoh p {
+    padding:0 10px;
+    color: hsl(180, 36%, 41%);
+}

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.home-bg {
+  background-image: url('../Assets/HomeBackground.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.home-content {
+  background-color: rgba(217, 12, 12, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 100px;
+  box-shadow: 2px 2px 60px black;
+}
+
+.home-left-content,
+.home-right-content {
+  padding: 0 20px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.home-right-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+button {
+  background-color: black;
+  color: rgb(205, 227, 247);
+  padding: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,51 @@
+.Container {
+    background-color: rgb(177, 93, 93);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    gap:12px;
+    margin-top: 20px;
+}
+
+.productcard{
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 6px;
+    width: 240px;
+    margin: 2px;
+    
+}
+.productcard:hover{
+    box-shadow: 0 2px 50px hsla(0, 0%, 0%, 0.3);
+}
+
+.button-container{
+    /* background-color: #c51515; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding:10px 30px 10px 30px;
+}
+
+.add{
+    background-color: #fff;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.add:hover{
+    background-color: #c51515;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 12px rgb(0, 0, 0);
+}
+
+.order{
+    transition: all 0.3s ease-in-out;
+}
+
+.order:hover{
+    box-shadow: 0 2px 10px rgba(223, 21, 21, 0.4);
+}
