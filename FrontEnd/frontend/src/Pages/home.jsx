@@ -1,10 +1,11 @@
 import "../CSS/home.css";
-import ProductDisplay from '../Product/ProductDisplay'
+import ProductDisplay from '../Product/ProductDisplay';
+import NewLetter from "../Components/newLetter";
 
 const Home = () => {
     return(
         <><div className="home-bg">
-            <div className="content">
+            <div className="home-content">               
                 <div className="home-left-content">
                     <h1>New Collection is Avaiable</h1>
                     <p>New Products has been restoked.<br />
@@ -24,7 +25,13 @@ const Home = () => {
         </div>
         <div className="items">
             <ProductDisplay/>
-        </div></>
+        </div>
+        <div className="newLetterhome">
+            <div className="newlettercontainor">
+                <NewLetter />
+            </div>
+        </div>
+            </>
     )
 };
 

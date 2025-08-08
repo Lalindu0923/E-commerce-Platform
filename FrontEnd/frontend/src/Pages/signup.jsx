@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import "../CSS/LogSign.css";
 
-const Login = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
+    name: '',
     email: '',
     password: '',
+    confirmPassword: '',
   });
 
   const handleChange = (e) => {
@@ -14,15 +16,27 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Login Data:', formData);
-    // Add API call for authentication here
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords don't match!");
+      return;
+    }
+    console.log('SignUp Data:', formData);
+    // Add API call for registration here
   };
 
   return (
     <div className="main">
-    <div className="auth-form">
-      <h2>Log In</h2>
+        <div className="auth-form">
+      <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
         <input
           type="email"
           name="email"
@@ -39,14 +53,22 @@ const Login = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Log In</button>
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          value={formData.confirmPassword}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Sign Up</button>
       </form>
       <p>
-        Don't have an account? <a href="/signup" >Sign Up</a>
+        Already have an account? <a href="/login">Log In</a>
       </p>
     </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;

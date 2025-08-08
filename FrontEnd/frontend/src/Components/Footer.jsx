@@ -1,21 +1,42 @@
 import React from 'react';
+import './Footer.css'
+import cart from '../Assets/cart.jpeg';
+import insta from '../Assets/insta.jpeg';
+import mail from '../Assets/mail.jpeg';
+import help from '../Assets/help.jpeg';
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <p>© {new Date().getFullYear()} E-Shop. All rights reserved.</p>
-    </footer>
+    <div className='footer'>
+      <div className='footer-logo'>
+        <img src={cart} alt="Footer Logo" />
+        <p>SHOPPER</p>
+      </div>
+      <ul className='footer-link'>
+        <li>Location</li>
+        <li>Offers</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div className="footer-icon">
+        <div className="icon-containor">
+          <img src={insta} alt="" />
+        </div>
+                <div className="icon-containor">
+          <img src={mail} alt="" />
+        </div>
+                <div className="icon-containor">
+          <img src={help} alt="" />
+        </div>
+      </div>
+        <hr/>
+      <div className="copy">
+        <p>© {new Date().getFullYear()} E-Shop. All rights reserved.</p>  
+      </div>
+
+    </div>
   );
 };
 
-const styles = {
-  footer: {
-    marginTop: '2rem',
-    padding: '1rem',
-    backgroundColor: '#f0f0f0',
-    textAlign: 'center',
-    color: '#333',
-  },
-};
 
 export default Footer;

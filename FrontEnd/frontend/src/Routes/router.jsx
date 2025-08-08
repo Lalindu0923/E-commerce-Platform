@@ -7,8 +7,12 @@ import Fashion from "../Pages/fashion";
 import Vehicle from "../Pages/vehicles";
 import Cart from "../Pages/cart";
 import LogIn from "../Pages/logIn";
-import Signin from "../Pages/signin";
-
+import Signup from "../Pages/signup";
+import ProductDetail from "../Product/detailed/productdetails";
+import BookProductDetail from "../Product/detailed/bookdetail";
+import ElectonicProductDetail from "../Product/detailed/electronicdetail"
+import VehicleProductDetail from "../Product/detailed/vehicledetail";
+import FashionProductDetail from "../Product/detailed/fashiondetail";
 
 
 const router = createBrowserRouter (
@@ -38,8 +42,8 @@ const router = createBrowserRouter (
                     element: <Vehicle/>
                 },
                 {
-                    path: "/signin",
-                    element: <Signin/>
+                    path: "/signup",
+                    element: <Signup/>
                 },
                 {
                     path: "/logIn",
@@ -49,6 +53,27 @@ const router = createBrowserRouter (
                     path: "/cart",
                     element: <Cart/>
                 },
+                {
+                    path: "/product/:id",
+                    element: <ProductDetail />
+                },
+                {
+                    path: "/book/:id",
+                    element: <BookProductDetail />
+            
+                },
+                {
+                    path: "/electronic/:id",
+                    element: <ElectonicProductDetail />            
+                },
+                {
+                    path: "/vehicle/:id",
+                    element: <VehicleProductDetail />            
+                },
+                {
+                    path: "/fashion/:id",
+                    element: <FashionProductDetail />            
+                },                                
             ]
         }
     ]

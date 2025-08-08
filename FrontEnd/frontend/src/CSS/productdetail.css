@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detail-container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    grid-template-areas: 
+                "big-image sidebar"
+                "text buttons";
+    gap: 30px;
+    height: auto;
+    min-height: 600px;
+}
+.bigimage{
+    background-color: aqua;
+    grid-area: big-image;
+    border: 3px solid #00bfff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.smallimage-Container{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.image{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.text-container{
+    grid-area: text;
+    background-color: #f5f5f5;
+    padding: 5px;
+    /* overflow: auto; */
+}
+
+.text-container h1{
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.text-container p{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-container span{
+    text-decoration: line-through;
+}
+
+.button-container {
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #a3c9d6;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px hsl(0, 0%, 0%, 0.3);
+}
+
+.quantity-selector {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* left align */
+    gap: 5px;
+    
+}
+.quantity-selector p{
+    color: #054053;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.quantity-selector input {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.order-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.cart-btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.order-btn:hover {
+    background-color: #e63939;
+}
+
+.cart-btn:hover {
+    background-color: #009acd;
+}

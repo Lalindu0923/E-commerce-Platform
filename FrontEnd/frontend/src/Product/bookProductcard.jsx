@@ -8,11 +8,14 @@ const BookProductDisplay = () => {
       {products.map((product) => (
         <ProductCard
           key={product.id}
+          id={product.id}
           image={product.image}
+          routeType="book"
           name={product.name}
           price={product.price}
           description={product.description}
           offer = {product.offer}
+          longDescription = {product.longDescription}
         />
       ))}
     </div>

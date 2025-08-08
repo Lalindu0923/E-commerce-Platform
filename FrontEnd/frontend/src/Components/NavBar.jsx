@@ -24,7 +24,7 @@ const NavBar =() => {
                 </Link>
                 <Link
                     to="/electronic"
-                    className={`nav-link ${location.pathname === "/electronics" ? "active" : ""}`}>
+                    className={`nav-link ${location.pathname === "/electronic" ? "active" : ""}`}>
                         Electronics
                 </Link>
                 <Link
@@ -34,7 +34,7 @@ const NavBar =() => {
                 </Link>
                 <Link
                     to="/fashion"
-                    className={`nav-link ${location.pathname === "/fashions" ? "active" : ""}`}>
+                    className={`nav-link ${location.pathname === "/fashion" ? "active" : ""}`}>
                         Fashions
                 </Link>
                 <Link
@@ -45,8 +45,8 @@ const NavBar =() => {
                 </div>
                 <div className="right-cont">
                     <Link
-                    to="/signin">
-                        Sing In
+                    to="/signup">
+                        Sign Up
                     </Link>
                     <Link
                         to="/login">
