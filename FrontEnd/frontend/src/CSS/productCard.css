@@ -8,7 +8,7 @@
     overflow: hidden; /* Prevent content overflow */
 }
 
-.productcard p {
+.productcard > p {
     margin: 6px 0px;
 }
 
@@ -23,13 +23,13 @@
     overflow: hidden; /* Hide overflow if image is too large */
 }
 
-.image img {
+.image > img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio while filling container */
 }
 
-.productcard h3 {
+.productcard > h3 {
     margin: 10px 0 6px 0;
     padding: 0 15px;
     font-size: 18px;

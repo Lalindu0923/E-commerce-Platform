@@ -3,13 +3,19 @@
     margin: 0px;
 }
 
-img{
+img {
     height: 38px;
     padding-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(2deg);
 }
 .Nav{
     background-color: rgba(255, 255, 255, 0.9);
     padding: 0.01px;
+    padding-top: 2px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -21,8 +27,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
 }
 .left-cont a{
     justify-content: center;
@@ -66,26 +70,33 @@ img{
 
 .right-cont a:hover {
     color: red;
-    background-color: #857e7e62;
+    background: rgba(133, 126, 126, 0.38);
+    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.2);
 
 }
 
 .left-cont a.active {
-  background-color: #000; /* black background */
-  color: white;           /* white text for visibility */
+    background-color: #000;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logoh{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: hwb(0 100% 40% / 0.274);
+    background-color: rgba(255, 255, 255, 0.27);
     padding: 3px 5px;
-    margin:4px 10px 4px 10px;
+    margin: 4px 10px;
     border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+.logoh:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
 .logoh p {
-    padding:0 10px;
+    padding: 0 10px;
     color: hsl(180, 36%, 41%);
+    font-weight: bold;
 }

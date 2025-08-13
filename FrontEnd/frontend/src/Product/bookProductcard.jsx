@@ -12,7 +12,7 @@ const BookProductDisplay = () => {
           image={product.image}
           routeType="book"
           name={product.name}
-          price={product.price}
+          price={product.price.toFixed(2)}
           description={product.description}
           offer = {product.offer}
           longDescription = {product.longDescription}

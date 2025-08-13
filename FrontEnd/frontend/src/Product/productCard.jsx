@@ -7,7 +7,7 @@ const productCard = (props) => {
   return (
     <div  className='productcard'>
       <Link to={`/${props.routeType}/${props.id}`}>
-        <img className='image' src={props.image} alt="" />
+        <img onClick={window.scrollTo(0,0)} className='image' src={props.image} alt="" />
       </Link>
         <h3>{props.name}</h3>
         <p>{props.description}</p>

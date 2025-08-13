@@ -1,0 +1,30 @@
+.fashion-bg{
+    background-image: url('../../Assets/fashion.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80%;
+    background-color: aqua;
+    margin: 20px;
+    padding: 5px;
+    gap: 20px;
+}
+
+.leftcontent,
+.rightcontent{
+    background-color: rgb(13, 86, 110);
+    padding: 10px;
+    width: 50%;
+
+
+}
